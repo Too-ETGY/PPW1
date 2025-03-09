@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sample flexbox example</h1>
+    </header>
+    <section id="flexContainer">
+        <article>
+            <h2>First article</h2>
+            <p>Content…</p>
+        </article>
+        <article>
+            <h2>Second article</h2>
+            <p>Content…</p>
+        </article>
+        <article>
+            <h2>Third article</h2>
+            <p>Content…</p>
+        </article>
+        <article>
+            <h2>Fourth article</h2>
+            <p>Content…</p>
+        </article>
+        <article>
+            <h2>Fifth article</h2>
+            <p>Content…</p>
+        </article>
+   </section>
+    <button onclick="toggleFlex()">Change Flex Direction</button>
+
+    <script>
+        let flexModes = ["row", "row-reverse", "column", "column-reverse"];
+        let currentIndex = 0;
+
+        function toggleFlex() {
+            let container = document.getElementById("flexContainer");
+            currentIndex = (currentIndex + 1) % flexModes.length;
+            container.style.flexDirection = flexModes[currentIndex];
+        }
+    </script>
+</body>
+</html>

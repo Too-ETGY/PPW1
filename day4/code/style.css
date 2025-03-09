@@ -1,0 +1,56 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+header {
+    background: purple;
+    height: 100px;
+}
+h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+}
+section {
+    zoom: 0.8;
+}
+article {
+    min-width: 400px;
+    margin: 10px;
+    padding: 10px;
+    background: aqua;
+}
+
+section {
+    height: 500px;
+    background-color: black;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items:center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* .box1 h2 {
+    font-size: 0.83em;
+    font-weight: bold;
+}   
+.box3 h2 {
+    font-size: 0.83em;
+    font-weight: bold;
+} */
+
+/* .box1{
+    height: 200px;
+}
+.box2{
+    height: 400px;
+}
+.box3{
+    height: 100px;
+}
+.box4{
+    height: 250px;
+} */
