@@ -22,15 +22,9 @@ article {
     background: aqua;
 }
 
-section {
-    height: 500px;
-    background-color: black;    
+section { 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items:center;
-    max-width: 1000px;
-    margin: auto;
 }
 
 /* .box1 h2 {
