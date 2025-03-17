@@ -312,8 +312,10 @@ a{
 }
 p.footer__description{
     text-align: center;
+    font-size: 20px;
 }
 .footer__item{
     margin: 10px;
     list-style-type: square;
+    font-size: 20px;
 }
