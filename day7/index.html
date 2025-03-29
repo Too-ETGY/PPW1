@@ -6,7 +6,7 @@
         <title>Spider's Prey</title>
         <link rel="stylesheet" href="resets.css">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="responsive.css">
+        <!-- <link rel="stylesheet" href="responsive.css"> -->
 
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +14,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <main>
+
+        <header>
             <!-- Navbar -->
             <nav class="navbar">
                 <div class="navbar__logo">
@@ -26,7 +27,9 @@
                     <li class="navbar__menu-item"><a href="#">Other Links</a></li>
                 </ul>
             </nav>
-
+        </header>
+        
+        <main>
             <!-- Hero Section -->
             <section class="hero">
                 <div class="hero__content">
@@ -35,10 +38,10 @@
                         Get started with beginner-friendly guides, character builds, tier lists, and advanced strategies for games like Honkai: Star Rail, Genshin Impact, and more.
                     </p>
                 </div>
-            </section>
+            </section>  
 
-            <!-- About Section -->
-            <section class="about">
+             <!-- About Section -->
+             <section class="about">
                 <div class="about__content">
                     <h1 class="about__title">Who are we?</h1>
                     <p class="about__description">
@@ -53,181 +56,6 @@
                 </div>
             </section>
 
-            <!-- Features Section -->
-            <section class="features">
-                <h1 class="features__title">We help you by providing</h1>
-                <div class="features__list">
-                    <article class="features__item">
-
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book-open" class="svg-inline--fa fa-book-open " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="36">
-                            <path fill="currentColor" d="M144.3 32.04C106.9 31.29 63.7 41.44 18.6 61.29c-11.42 5.026-18.6 16.67-18.6 29.15l0 357.6c0 11.55 11.99 19.55 22.45 14.65c126.3-59.14 219.8 11 223.8 14.01C249.1 478.9 
-                            252.5 480 256 480c12.4 0 16-11.38 16-15.98V80.04c0-5.203-2.531-10.08-6.781-13.08C263.3 65.58 216.7 33.35 144.3 32.04zM557.4 61.29c-45.11-19.79-88.48-29.61-125.7-29.26c-72.44 1.312-118.1 33.55-120.9 
-                            34.92C306.5 69.96 304 74.83 304 80.04v383.1C304 468.4 307.5 480 320 480c3.484 0 6.938-1.125 9.781-3.328c3.925-3.018 97.44-73.16 223.8-14c10.46 4.896 22.45-3.105 22.45-14.65l.0001-357.6C575.1 77.97 
-                            568.8 66.31 557.4 61.29z">
-                            </path>
-                        </svg>
-                        
-                          <h4 class="features__name">Beginner and Advanced Guides</h4>
-                        <p class="features__description">Knowledge is power and Spider's Prey teaches you what to do (or what not to do) in order to gain advantage over other players.</p>
-                    </article>
-                    <article class="features__item">
-                        
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-group" class="svg-inline--fa fa-user-group " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="36">
-                            <path fill="currentColor" d="M224 256c70.7 0 128-57.31 128-128S294.7 0 224 0C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3c-95.73 0-173.3 77.6-173.3 173.3C0 496.5 15.52 512 34.66 512H413.3C432.5 
-                            512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304zM479.1 320h-73.85C451.2 357.7 480 414.1 480 477.3C480 490.1 476.2 501.9 470 512h138C625.7 512 640 497.6 640 479.1C640 391.6 568.4 320 479.1 320zM432 256C493.9 
-                            256 544 205.9 544 144S493.9 32 432 32c-25.11 0-48.04 8.555-66.72 22.51C376.8 76.63 384 101.4 384 128c0 35.52-11.93 68.14-31.59 94.71C372.7 243.2 400.8 256 432 256z">
-                            </path>
-                        </svg>
-                        
-                        <h4 class="features__name">Character Reviews</h4>
-                        <p class="features__description">Gacha games revolve around collecting characters and Spider's Prey helps you use them in an optimal view.</p>
-                    </article>
-                    <article class="features__item">
-
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ranking-star" class="svg-inline--fa fa-ranking-star " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="36">
-                            <path fill="currentColor" d="M406.1 61.65C415.4 63.09 419.4 74.59 412.6 81.41L374.6 118.1L383.6 170.1C384.1 179.5 375.3 186.7 366.7 182.4L320.2 157.9L273.3 182.7C264.7 187 255 179.8 256.4 170.5L265.4 
-                            118.4L227.4 81.41C220.6 74.59 224.6 63.09 233.9 61.65L286.2 54.11L309.8 6.332C314.1-2.289 326.3-1.93 330.2 6.332L353.8 54.11L406.1 61.65zM384 256C401.7 256 416 270.3 416 288V480C416 497.7 401.7 512 384 
-                            512H256C238.3 512 224 497.7 224 480V288C224 270.3 238.3 256 256 256H384zM160 320C177.7 320 192 334.3 192 352V480C192 497.7 177.7 512 160 512H32C14.33 512 0 497.7 0 480V352C0 334.3 14.33 320 32 320H160zM448 
-                            416C448 398.3 462.3 384 480 384H608C625.7 384 640 398.3 640 416V480C640 497.7 625.7 512 608 512H480C462.3 512 448 497.7 448 480V416z">
-                            </path>
-                        </svg>
-
-                        <h4 class="features__name">Tier Lists and Meta Analysis</h4>
-                        <p class="features__description">Whether you are a meta slave or collector, playing any gacha game without a good tier list makes everything harder.</p>
-                    </article>
-                    <article class="features__item">
-                        
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="newspaper" class="svg-inline--fa fa-newspaper " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="36">
-                            <path fill="currentColor" d="M480 32H128C110.3 32 96 46.33 96 64v336C96 408.8 88.84 416 80 416S64 408.8 64 400V96H32C14.33 96 0 110.3 0 128v288c0 35.35 28.65 64 64 64h384c35.35 0 64-28.65 64-64V64C512 
-                            46.33 497.7 32 480 32zM272 416h-96C167.2 416 160 408.8 160 400C160 391.2 167.2 384 176 384h96c8.836 0 16 7.162 16 16C288 408.8 280.8 416 272 416zM272 320h-96C167.2 320 160 312.8 160 304C160 295.2 167.2 288 
-                            176 288h96C280.8 288 288 295.2 288 304C288 312.8 280.8 320 272 320zM432 416h-96c-8.836 0-16-7.164-16-16c0-8.838 7.164-16 16-16h96c8.836 0 16 7.162 16 16C448 408.8 440.8 416 432 416zM432 320h-96C327.2 320 320 
-                            312.8 320 304C320 295.2 327.2 288 336 288h96C440.8 288 448 295.2 448 304C448 312.8 440.8 320 432 320zM448 208C448 216.8 440.8 224 432 224h-256C167.2 224 160 216.8 160 208v-96C160 103.2 167.2 96 176 96h256C440.8 
-                            96 448 103.2 448 112V208z">
-                            </path>
-                        </svg>
-
-                        <h4 class="features__name">News and updates</h4>
-                        <p class="features__description">Stay up to date with any patch notes, new content or other important updates.</p>
-                    </article>
-                    <article class="features__item">
-                        
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list-ol" class="svg-inline--fa fa-list-ol " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="36">
-                            <path fill="currentColor" d="M55.1 56.04C55.1 42.78 66.74 32.04 79.1 32.04H111.1C125.3 32.04 135.1 42.78 135.1 56.04V176H151.1C165.3 176 175.1 186.8 175.1 200C175.1 213.3 165.3 224 151.1 224H71.1C58.74 
-                            224 47.1 213.3 47.1 200C47.1 186.8 58.74 176 71.1 176H87.1V80.04H79.1C66.74 80.04 55.1 69.29 55.1 56.04V56.04zM118.7 341.2C112.1 333.8 100.4 334.3 94.65 342.4L83.53 357.9C75.83 368.7 60.84 371.2 50.05 
-                            363.5C39.26 355.8 36.77 340.8 44.47 330.1L55.59 314.5C79.33 281.2 127.9 278.8 154.8 309.6C176.1 333.1 175.6 370.5 153.7 394.3L118.8 432H152C165.3 432 176 442.7 176 456C176 469.3 165.3 480 152 480H64C54.47 
-                            480 45.84 474.4 42.02 465.6C38.19 456.9 39.9 446.7 46.36 439.7L118.4 361.7C123.7 355.9 123.8 347.1 118.7 341.2L118.7 341.2zM512 64C529.7 64 544 78.33 544 96C544 113.7 529.7 128 512 128H256C238.3 128 224 113.7 
-                            224 96C224 78.33 238.3 64 256 64H512zM512 224C529.7 224 544 238.3 544 256C544 273.7 529.7 288 512 288H256C238.3 288 224 273.7 224 256C224 238.3 238.3 224 256 224H512zM512 384C529.7 384 544 398.3 544 416C544 
-                            433.7 529.7 448 512 448H256C238.3 448 224 433.7 224 416C224 398.3 238.3 384 256 384H512z">
-                            </path>
-                        </svg>
-                        
-                        <h4 class="features__name">Stats and data</h4>
-                        <p class="features__description">We gathers a lot of stats and data about characters and uses them to optimize your gameplay.</p>
-                    </article>
-                    <article class="features__item">
-                        
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="calculator" class="svg-inline--fa fa-calculator " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="36">
-                            <path fill="currentColor" d="M336 0h-288C22.38 0 0 22.38 0 48v416C0 489.6 22.38 512 48 512h288c25.62 0 48-22.38 48-48v-416C384 22.38 361.6 0 336 0zM64 208C64 199.2 71.2 192 80 192h32C120.8 192 128 
-                            199.2 128 208v32C128 248.8 120.8 256 112 256h-32C71.2 256 64 248.8 64 240V208zM64 304C64 295.2 71.2 288 80 288h32C120.8 288 128 295.2 128 304v32C128 344.8 120.8 352 112 352h-32C71.2 352 64 344.8 64 
-                            336V304zM224 432c0 8.801-7.199 16-16 16h-128C71.2 448 64 440.8 64 432v-32C64 391.2 71.2 384 80 384h128c8.801 0 16 7.199 16 16V432zM224 336c0 8.801-7.199 16-16 16h-32C167.2 352 160 344.8 160 336v-32C160 
-                            295.2 167.2 288 176 288h32C216.8 288 224 295.2 224 304V336zM224 240C224 248.8 216.8 256 208 256h-32C167.2 256 160 248.8 160 240v-32C160 199.2 167.2 192 176 192h32C216.8 192 224 199.2 224 208V240zM320 
-                            432c0 8.801-7.199 16-16 16h-32c-8.799 0-16-7.199-16-16v-32c0-8.801 7.201-16 16-16h32c8.801 0 16 7.199 16 16V432zM320 336c0 8.801-7.199 16-16 16h-32c-8.799 0-16-7.199-16-16v-32C256 295.2 263.2 288 272 
-                            288h32C312.8 288 320 295.2 320 304V336zM320 240C320 248.8 312.8 256 304 256h-32C263.2 256 256 248.8 256 240v-32C256 199.2 263.2 192 272 192h32C312.8 192 320 199.2 320 208V240zM320 144C320 152.8 312.8 
-                            160 304 160h-224C71.2 160 64 152.8 64 144v-64C64 71.2 71.2 64 80 64h224C312.8 64 320 71.2 320 80V144z">
-                            </path>
-                        </svg>
-
-                        <h4 class="features__name">Tools and calculation</h4>
-                        <p class="features__description">Spider's Prey develops tools that allow you test and simulate various things without wasting resources in game.</p>
-                    </article>
-                </div>
-            </section>
-
-            <!-- Popular Games -->
-            <section class="games">
-                <h1 class="games__title">Popular Games</h1>
-                <div class="games__list">
-                    <div class="games__item">
-                        <img src="content/GI.jpeg" alt="Genshin Icon" class="games__icon">
-                        <h5 class="games__name">Genshin Impact</h5>
-                    </div>
-                    <div class="games__item">
-                        <img src="content/hsr.jpeg" alt="Star Rail Icon" class="games__icon">
-                        <h5 class="games__name">Honkai: Star Rail</h5>
-                    </div>
-                    <div class="games__item">
-                        <img src="content/WuWajpeg.jpeg" alt="Wuthering Waves Icon" class="games__icon">
-                        <h5 class="games__name">Wuthering Waves</h5>
-                    </div>
-                </div>
-                <p class="games__more">More on <a href="#" class="games__link">here</a></p>
-            </section>
-
-            <!-- FAQ Section -->
-            <section class="faq">
-                <h1 class="faq__title">Frequently Asked Questions</h1>
-                <div class="faq__list">
-                    <div class="faq__item">
-                        <p class="faq__question">Q: Is Spider's Prey free to use?</p>
-                        <p class="faq__answer">A: Yes! All of our guides, tier lists, and character breakdowns are completely free to access.</p>
-                    </div>
-                    <div class="faq__item">
-                        <p class="faq__question">Q: How often do you update the character tier lists? </p>
-                        <p class="faq__answer">A: We update our tier lists and recommendations whenever new characters or balance patches are released.</p>
-                    </div>
-                    <div class="faq__item">
-                        <p class="faq__question">Q: Which gacha games do you cover? </p>
-                        <p class="faq__answer">A: We currently cover Honkai: Star Rail, Genshin Impact, and Wuthering Waves, with plans to expand into other popular gacha games in the future. </p>
-                    </div>
-                    <div class="faq__item">
-                        <p class="faq__question">Q: Can I contribute to Spider's Prey?</p>
-                        <p class="faq__answer">A: Absolutely! If you have expert insights or want to help improve our guides, feel free to reach out to us</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Join Discord -->
-            <section class="addition">
-                <div class="addition__box">
-                    <div class="addition__item">
-                        <h1 class="addition__title">Meet the team on Discord</h1>
-                        <button class="addition__button"><a href="https://discord.com/invite/guobafans"><img src="content/3670157.png" alt="Discord Icon"></a></button>
-                    </div>
-                    <p class="addition__description">Join the ever-growing community on our Discord (over 53000 members) and meet the team!</p>
-                </div>
-            </section>
         </main>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer__box">
-                <div class="footer__section">
-                    <h3 class="footer__title">About Company</h3>
-                    <p class="footer__description">Spider's Prey is a dedicated guide hub for gacha gamers, providing tier lists, builds, and in-depth strategies to help you dominate your favorite games.</p>
-                </div>
-                <div class="footer__section">
-                    <h3 class="footer__title">Contact Information</h3>
-                    <div class="footer__description">
-                        <div class="footer__item">
-                            <p>email : thegarradit@gmail.com</p>
-                        </div>
-                        <div class="footer__item">
-                            <p>phone : +(62) 895 3668 61280</p>
-                        </div>
-                        <div class="footer__item">
-                            <p>address : Jl. Blahblah, Disitu, Yasitu, Nahtemu</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer__section">            
-                    <h3 class="footer__title">Legal Pages</h3>
-                    <ul class="footer__list">
-                        <li class="footer__item">Terms of Use</li>
-                        <li class="footer__item">Privacy Policy</li>
-                        <li class="footer__item">Contact Us</li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
     </body>
 </html>
