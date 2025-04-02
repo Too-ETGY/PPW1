@@ -1,3 +1,6 @@
+*{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #E3C5D8;
     flex-direction: column;
@@ -6,7 +9,7 @@ body{
 }
 a{
     text-decoration: none;
-    color: #FFFFFF;
+    color: #DA0895;
 }
 
 header{
@@ -29,17 +32,18 @@ header{
 }
 .navbar__logo img{
     height: 10vh;
-    /* border-radius: 20px; */
 }
 .navbar__menu{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 90px;
 }
 .navbar__menu-item{
     padding: 50px;
     font-size: 20px;
+}
+.navbar__menu-item a{
+    color: #FFFFFF;
 }
 
 main{
@@ -53,14 +57,13 @@ main{
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
-    background-attachment: fixed;
     min-height: 110vh;
 }
 .hero::before {
     content: "";
     position: absolute;
     width: 100%;
-    height: 111vh;
+    min-height: 111vh;
     background: rgba(227, 197, 216, 0.7);
     z-index: 1;
 }
@@ -129,6 +132,7 @@ main{
     color: #FFFFFF;
     font-family: "Poppins";
     font-size: 45px;
+    text-align: center;
 }
 .features__list{
     display: flex;
@@ -136,13 +140,12 @@ main{
     justify-content: center;
     align-items: center;
     max-width: 90%;
-    height: 700px;
-    padding: 30px;
+    padding-top: 30px;
 }
 .features__item {
     color: #FFFFFF;
     background-color: #DA0895;
-    width: 300px;
+    max-width: 300px;
     height: 250px;
     border-radius: 20px;
     margin: 20px;
@@ -158,9 +161,12 @@ main{
 }
 .features__name{
     font-size: 24px;
-    margin: 10px;
+    margin-bottom: 10px;
 }
 .features__description{
+    font-size: 20px;
+}
+.features__icon{
     font-size: 20px;
 }
 
@@ -338,12 +344,14 @@ p.footer__description{
 
 
 @media (max-width: 1024px){
-    .navbar__menu{
-        gap: 0;
-    }
     .navbar__menu-item{
         padding: 50px;
-        font-size: 20px;
+        font-size: 14px;
+    }
+    @media (min-height: 810px) {
+        .navbar__menu-item{
+            font-size: 24px;
+        }
     }
 
     .about__content{
@@ -360,6 +368,11 @@ p.footer__description{
         width: 100%;
         height: 100%;
     }
+
+    .features__item {
+        width: 25vw;
+        min-height: fit-content;
+    }
 }
 
 @media (max-width: 768px) { 
@@ -369,7 +382,6 @@ p.footer__description{
     
     .about{
         flex-direction: column-reverse;
-        padding: 50px;
     }
     .about__content{
         text-align: center;
@@ -382,5 +394,24 @@ p.footer__description{
         height: auto;
         margin-bottom: 30px;
         margin-left: 0;
+    }
+
+    .features{
+        padding: 0;
+    }
+    .features__title{
+        padding-top: 50px;
+    }
+    .features__list{
+        max-width: 100%;
+    }
+    .features__item {
+        width: 30vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .features__item{
+        width: 90vw;
     }
 }
