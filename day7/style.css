@@ -146,8 +146,8 @@ main{
 .features__item {
     color: #FFFFFF;
     background-color: #DA0895;
-    max-width: 300px;
-    height: 250px;
+    max-width: 18.75rem;
+    height: 15.625rem;
     border-radius: 20px;
     font-size: 1.25rem;
     margin: 1.25em;
@@ -368,9 +368,6 @@ p.footer__description{
         }
     }
     
-    .about__content{
-        max-width: 30%;
-    }
     .about__description{
         max-width: none;
     }
@@ -403,7 +400,6 @@ p.footer__description{
         max-width: 100%;
     }   
     .about__video{
-        position: relative;
         max-width: 100%;
         height: auto;
         margin-bottom: 30px;
@@ -416,16 +412,12 @@ p.footer__description{
     .features__title{
         padding-top: 3.125rem;
     }
-    .features__list{
-        max-width: 100%;
-    }
     .features__item {
         width: 30vw;
     }
 
     .games__list{
         justify-content: space-between;
-        /* gap: 0.25rem; */
     }
     .games__icon{
         max-width: 10em;
@@ -449,13 +441,6 @@ p.footer__description{
         justify-content: center;
         flex-wrap: wrap;
         gap: 0.5em;
-    }
-    .games__icon{
-        max-width: 10em;
-        max-height: 10em;
-    }
-    .games__name{
-        font-size: 1em;
     }
 
     .addition__button{
