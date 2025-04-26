@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Navbar Over Hero</title>
+  <link rel="stylesheet" href="resets.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="custom.css">
+  <style>
+
+    .navbar-custom {
+      transition: background-color 0.3s ease;
+      background-color: transparent;
+      z-index: 1000;
+    }
+
+    .navbar-scrolled {
+      background-color: #8C165B;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .hero {
+      height: 110vh;
+      background: url('./content/111031068.jpg') center center/cover no-repeat;
+      position: relative;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      min-width: 100%;
+    }
+    #navbarLogo {
+  transition: opacity 0.3s ease;
+}
+
+  </style>
+</head>
+<body class="bg-color2">
+
+<!-- Navbar -->
+<nav class="navbar navbar-custom py-0">
+  <div class="container-fluid px-0" style="height: 10vh">
+    <a class="navbar-brand py-0 h-100" href="#">
+      <img src="./content/logo-no-bg.png" alt="Brand Logo" class="h-100 w-auto" id="navbarLogo">
+    </a>
+    <div class="d-flex">
+      <ul class="navbar-nav flex-row">
+        <li class="nav-item me-5">
+          <a class="nav-link text-white" href="#">Home</a>
+        </li>
+        <li class="nav-item me-5">
+          <a class="nav-link text-white" href="#">Blogs</a>
+        </li>
+        <li class="nav-item me-5">
+          <a class="nav-link text-white" href="#">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero d-flex align-items-center justify-content-center text-white">
+  <h1>Welcome to Our Website</h1>
+</section>
+
+<!-- Dummy content to scroll -->
+<div style="height: 2000px;"></div>
+
+<script>
+  // Script to toggle background when scrolled
+  const navbar = document.querySelector('.navbar');
+  const logo = document.getElementById('navbarLogo');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 10) {
+        logo.style.opacity = 1;
+        setTimeout(() => {
+            navbar.classList.add('navbar-scrolled');
+            logo.src = './content/logo.png';
+            logo.style.opacity = 1; 
+        }, 150);
+  } else {
+        logo.style.opacity = 0;
+        setTimeout(() => {
+            logo.src = './content/logo-no-bg.png';
+            logo.style.opacity = 1;
+            navbar.classList.remove('navbar-scrolled');
+        }, 150);
+        
+  }
+  });
+</script>
+
+</body>
+</html>
