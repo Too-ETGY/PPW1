@@ -9,10 +9,12 @@
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900
+        &family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
         <!-- Bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <!-- Custom -->
         <link rel="stylesheet" href="custom.css">
     </head>
@@ -21,7 +23,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-custom navbar-expand py-0 position-fixed top-0 min-vw-100">
             <div class="container-fluid d-flex align-items-center px-0" style="height: 10vh;">
-                <a href="#" class="navbar-brand py-0 h-100">
+                <a href="#" class="navbar-brand py-0 h-100 top-0 d-flex justify-content-center">
                     <img src="./content/logo-no-bg.png" alt="Logo image" class="h-100 w-auto rounded-1" id="navbarLogo">
                 </a>
                 <div class="d-flex">
@@ -43,35 +45,45 @@
         <main>
             <!-- Hero Section -->
             <section class="hero">
-                <div class="hero-overlay d-flex flex-column justify-content-center align-items-center">
-                    <h1 class="custom-heading1 text-center text-white mb-0 px-3 px-md-4 px-lg-5">Master Your Gacha Journey with Expert Guides & Tips</h1>
-                    <p class="custom-hero-des pt-3 m-2 text-center text-white lh-1">
-                        Get started with beginner-friendly guides, character builds, tier lists, and advanced strategies for games like Honkai: Star Rail, Genshin Impact, and more.
+                <div class="hero-overlay d-flex flex-column justify-content-center align-items-center text-white">
+                    <h1 class="custom-heading1 text-center mb-0 px-3 px-md-4 px-lg-5">
+                        Master Your Gacha Journey with Expert Guides & Tips</h1>
+                    <p class="custom-hero-des pt-3 m-2 text-center lh-1">
+                        Get started with beginner-friendly guides, character builds, tier lists, 
+                        and advanced strategies for games like Honkai: Star Rail, Genshin Impact, and more.
                     </p>
                 </div>
             </section>  
 
              <!-- About Section -->
-             <!-- <section class="about">
-                <div class="about__content">
-                    <h1 class="about__title">Who are we?</h1>
-                    <p class="about__description">
-                        Spider's Prey is your go-to hub for gacha game mastery. 
-                        Whether you're new to the game or a seasoned player, we provide expert guides, character rankings, and meta analysis to help you play efficiently.
-                    </p>
+             <section class="container py-5 w-100">
+                <div class="row flex-column-reverse flex-md-row align-items-center justify-content-center h-100">
+                    <div class="col-md-4 text-white text-md-end text-center h-100">
+                        <h1 class="custom-heading1 mb-1">Who are we?</h1>
+                        <p class="custom-about-des mb-0 lh-1">
+                            Spider's Prey is your go-to hub for gacha game mastery. 
+                            Whether you're new to the game or a seasoned player, we provide expert guides, 
+                            character rankings, and meta analysis to help you play efficiently.
+                        </p>
+                    </div>
+                    <div class="col-8 col-md-6 d-flex justify-content-around" id="custom-about-iframe">
+                        <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/3xjPQtpxCoE?si=5UzViE0ds_Rkdnk_" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                        picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                        class="w-100 w-md-75 w-xl-100 rounded-4 custom-about-iframe">
+                        </iframe>
+                    </div>
                 </div>
-                <div class="about__video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3xjPQtpxCoE?si=5UzViE0ds_Rkdnk_" title="YouTube video player" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
-                </div>
-            </section> -->
+            </section>
 
             <!-- Features Section -->
-            <!-- <section class="features">
-                <h1 class="features__title">We help you by providing</h1>
-                <div class="features__list">
-                    <article class="features__item">
+            <section class="py-5 bg-color1 container-fluid text-center text-white">
+                <h1 class="custom-heading1">We help you by providing</h1>
+                <div class="row">
+                    <article class="card col-4 bg-color3">
 
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book-open" class="svg-inline--fa fa-book-open features__icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="36">
                             <path fill="currentColor" d="M144.3 32.04C106.9 31.29 63.7 41.44 18.6 61.29c-11.42 5.026-18.6 16.67-18.6 29.15l0 357.6c0 11.55 11.99 19.55 22.45 14.65c126.3-59.14 219.8 11 223.8 14.01C249.1 478.9 
@@ -84,7 +96,7 @@
                           <h4 class="features__name">Beginner and Advanced Guides</h4>
                         <p class="features__description">Knowledge is power and Spider's Prey teaches you what to do (or what not to do) in order to gain advantage over other players.</p>
                     </article>
-                    <article class="features__item">
+                    <article class="card col-4 bg-color3">
                         
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-group" class="svg-inline--fa fa-user-group features__icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="36">
                             <path fill="currentColor" d="M224 256c70.7 0 128-57.31 128-128S294.7 0 224 0C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3c-95.73 0-173.3 77.6-173.3 173.3C0 496.5 15.52 512 34.66 512H413.3C432.5 
@@ -96,7 +108,7 @@
                         <h4 class="features__name">Character Reviews</h4>
                         <p class="features__description">Gacha games revolve around collecting characters and Spider's Prey helps you use them in an optimal view.</p>
                     </article>
-                    <article class="features__item">
+                    <article class="card col-4 bg-color3">
 
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ranking-star" class="svg-inline--fa fa-ranking-star features__icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="36">
                             <path fill="currentColor" d="M406.1 61.65C415.4 63.09 419.4 74.59 412.6 81.41L374.6 118.1L383.6 170.1C384.1 179.5 375.3 186.7 366.7 182.4L320.2 157.9L273.3 182.7C264.7 187 255 179.8 256.4 170.5L265.4 
@@ -109,7 +121,7 @@
                         <h4 class="features__name">Tier Lists and Meta Analysis</h4>
                         <p class="features__description">Whether you are a meta slave or collector, playing any gacha game without a good tier list makes everything harder.</p>
                     </article>
-                    <article class="features__item">
+                    <article class="card col-4 bg-color3">
                         
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="newspaper" class="svg-inline--fa fa-newspaper features__icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="36">
                             <path fill="currentColor" d="M480 32H128C110.3 32 96 46.33 96 64v336C96 408.8 88.84 416 80 416S64 408.8 64 400V96H32C14.33 96 0 110.3 0 128v288c0 35.35 28.65 64 64 64h384c35.35 0 64-28.65 64-64V64C512 
@@ -123,7 +135,7 @@
                         <h4 class="features__name">News and updates</h4>
                         <p class="features__description">Stay up to date with any patch notes, new content or other important updates.</p>
                     </article>
-                    <article class="features__item">
+                    <article class="card col-4 bg-color3">
                         
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list-ol" class="svg-inline--fa fa-list-ol features__icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="36">
                             <path fill="currentColor" d="M55.1 56.04C55.1 42.78 66.74 32.04 79.1 32.04H111.1C125.3 32.04 135.1 42.78 135.1 56.04V176H151.1C165.3 176 175.1 186.8 175.1 200C175.1 213.3 165.3 224 151.1 224H71.1C58.74 
@@ -138,7 +150,7 @@
                         <h4 class="features__name">Stats and data</h4>
                         <p class="features__description">We gathers a lot of stats and data about characters and uses them to optimize your gameplay.</p>
                     </article>
-                    <article class="features__item">
+                    <article class="card col-4 bg-color3">
                         
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="calculator" class="svg-inline--fa fa-calculator features__icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="36">
                             <path fill="currentColor" d="M336 0h-288C22.38 0 0 22.38 0 48v416C0 489.6 22.38 512 48 512h288c25.62 0 48-22.38 48-48v-416C384 22.38 361.6 0 336 0zM64 208C64 199.2 71.2 192 80 192h32C120.8 192 128 
@@ -155,7 +167,7 @@
                         <p class="features__description">Spider's Prey develops tools that allow you test and simulate various things without wasting resources in game.</p>
                     </article>
                 </div>
-            </section> -->
+            </section>
 
             <!-- Popular Games -->
             <!-- <section id="games" class="games">
@@ -256,10 +268,10 @@
             window.addEventListener('scroll', () => {
                 if (window.scrollY > 10) {
                     navbar.classList.add('navbar-scrolled');
-                    logo.src = './content/logo.png?ts=' + new Date().getTime();
+                    logo.src = './content/logo.png';
                 } else {
                     navbar.classList.remove('navbar-scrolled');
-                    logo.src = './content/logo-no-bg.png?ts=' + new Date().getTime();
+                    logo.src = './content/logo-no-bg.png';
                 }
             });
         </script>
