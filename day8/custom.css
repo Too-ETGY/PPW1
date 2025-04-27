@@ -27,7 +27,7 @@
     outline: 2px solid rgba(140, 22, 91, 1);
 }
 .navbar-scrolled {
-    background-color: #8C165B;
+    background-color: rgba(140, 22, 91, 0.8);
 }
 .navbar-scrolled img {
     opacity: 70%;
@@ -53,25 +53,19 @@
         rgba(227, 197, 216, 0.7) 65%, 
         rgba(227, 197, 216, 1) 95%);
 }
-.custom-hero-des{
-    font-size: 1.5rem;
-    max-width: 45em;
-}
 
 .custom-about-des{
     font-size: 1.25rem;
-    max-width: 50%;
-    margin-left: 50%;
+    max-width: 80%;
+    margin-left: 20%;
 }
-/* .custom-about-iframe{
-    width: 80%;
-    height: 400px;
-} */
+
+
 
 @media (min-height: 1300px) {
     .custom-nav-item{
         font-size: 1.5rem;
-        padding: 0 1em;
+        padding: 0 1.5em;
     }
 }
 @media (max-width: 1024px){
@@ -84,7 +78,7 @@
 
     .custom-about-des{
         max-width: none;
-        margin-left: 25%;
+        margin-left: 5%;
     }
 }
 
@@ -92,7 +86,6 @@
     .custom-about-des{
         max-width: 100%;
         margin-left: 0;
-        padding: 0 10%;
     }   
     .custom-about-iframe{
         max-height: 150px;;
