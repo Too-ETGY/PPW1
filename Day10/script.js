@@ -1,0 +1,1 @@
+document.writeln('<br><h1>saya dari eksternal</h1>');

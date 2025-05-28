@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        
+    <h1>Simple counter</h1>
+
+    <button onclick="add()" id="add">tambah</button>
+    <button onclick="min()" id="min">kurang</button>
+    <button onclick="multiplication()" id="mult">kali</button>
+    <button onclick="divide()" id="divi">bagi</button>
+
+    <table border="1">
+        <thead>
+            <th>Bilangan 1</th>
+            <th>Bilangan 2</th>
+            <th>Hasil</th>
+        </thead>
+        <tbody>
+            <td id="bil1"></td>
+            <td id="bil2"></td>
+            <td id="hasil"></td>
+        </tbody>
+    </table>
+
+    </center>
+
+    <script>
+        let bil1 = prompt("Masukkan bilangan pertama!")
+        bil1 = bil1 ? parseFloat(bil1) : 0
+
+        document.getElementById('bil1').innerHTML = bil1
+
+        let bil2 = prompt("Masukkan bilangan kedua!")
+        bil2 = bil2 ? parseFloat(bil2) : 0
+
+        document.getElementById('bil2').innerHTML = bil2
+
+        let hasil = document.getElementById('hasil')
+        hasil.innerHTML = bil1 + bil2
+        
+        function add(){
+            hasil.innerHTML = bil1 + bil2
+        }
+        function min(){
+            hasil.innerHTML = bil1 - bil2
+        }
+        function multiplication(){
+            hasil.innerHTML = bil1 * bil2
+        }
+        function divide(){
+            hasil.innerHTML = bil1 / bil2
+        }
+
+    </script>
+</body>
+</html>

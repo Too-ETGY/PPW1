@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>bukak console log</p>
+    </div>
+
+    
+    <button onclick="upper()">sini</button>
+    <div id="upper">apple</div>
+
+    <!-- <iframe src="https://too-etgy.github.io/PPW1/day8/latihan/" width="800" height="500" frameborder="0"></iframe> -->
+
+    <script src="script.js"></script>
+    <script>
+        console.log("Muahh");
+
+        let si = document.getElementById('upper');
+        function upper(){
+            let change = si.innerHTML.toLocaleUpperCase();
+            si.innerHTML = change;
+        }
+    </script>
+</body>
+</html>

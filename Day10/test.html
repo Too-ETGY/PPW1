@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Popup Table</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="popUp()" id="btn">Sini dong</button>
+
+    <table border="1" id="table" style="display: none;">
+        <tr>
+            <td>Bilangan 1</td>
+            <td>Bilangan 2</td>
+            <td>Hasil Tambah</td>
+        </tr>
+        <tr>
+            <td id="bil1"></td>
+            <td id="bil2"></td>
+            <td id="hasil"></td>
+        </tr>
+    </table>
+
+    <script>
+        function popUp() {
+            const btn = document.getElementById("btn");
+            let lanjut = confirm("Mau lanjut nggak?");
+            btn.remove();
+
+            if (lanjut) {
+                let bil1 = parseFloat(prompt("Masukkan bilangan pertama:"));
+
+                if (bil1) {
+                    let bil2 = parseFloat(prompt("Masukkan bilangan kedua:"));
+
+                    if (bil2) {
+
+                        document.getElementById("table").style.display = "block";
+
+                        document.getElementById("bil1").innerHTML = bil1;
+                        document.getElementById("bil2").innerHTML = bil2;
+                        document.getElementById("hasil").innerHTML = bil1 + bil2;
+
+                    } else {
+                        document.write("<h3>Hanya memasukkan yang pertama, kedua jangan dilupakan :( </h3>");
+                    }
+                } else {
+                    document.write("<h2>Belum memasukkan bilangan samsek.</h2>");
+                }
+            } else {
+                document.write("<h1>YAUDAH!!!</h1>");
+            }
+        }
+    </script>
+</body>
+</html>
